@@ -9,7 +9,7 @@ import ReactDOM from "react-dom/client";
  *    - Search
  *    - RestaurantContainer
  *      - Restaurant Card
- *        - Img 
+ *        - Img
  *        - Name of res, cusines , star rating , delivery time , etc.
  *  Footer
  *    - Copyright
@@ -18,6 +18,7 @@ import ReactDOM from "react-dom/client";
  *    - Contact
  **/
 
+// latest push
 const Header = () => {
   return (
     <div className="header">
@@ -38,9 +39,7 @@ const Header = () => {
   );
 };
 
-const RestaurantCard = () => {
-
-};
+// const RestaurantCard = () => {};
 
 const Body = () => {
   return (
