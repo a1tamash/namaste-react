@@ -1,17 +1,64 @@
 import React from "react";
-import ReactDOM from "react-dom/client"
+import ReactDOM from "react-dom/client";
 
-const parent = React.createElement('div',{id:"parent"},[
-  React.createElement('div',{id:'child1'},[
-    React.createElement('h1',{},"I'm an h1 tag") , 
-    React.createElement('h2',{},"I'm an h2 tag")
-  ]),
-  React.createElement('div',{id:'child2'},[
-    React.createElement('h1',{},"I'm an h1 tag"),
-    React.createElement('h2',{},"I'm an h2 tag")
-  ])
-]); 
+/**
+ *  Header
+ *    - Logo
+ *    - Nav Items
+ *  Body
+ *    - Search
+ *    - RestaurantContainer
+ *      - Restaurant Card
+ *        - Img 
+ *        - Name of res, cusines , star rating , delivery time , etc.
+ *  Footer
+ *    - Copyright
+ *    - Links
+ *    - Address
+ *    - Contact
+ **/
 
-const root = ReactDOM.createRoot(document.getElementById('root')) ; 
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="logo-container">
+        <img
+          className="logo"
+          src="https://www.pngkey.com/png/detail/382-3827394_order-online-logo-ideas-online-food-ordering.png"></img>
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
-root.render(parent) ;
+const RestaurantCard = () => {
+
+};
+
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">Search</div>
+      <div className="res-container">// Restaurant Cards</div>
+    </div>
+  );
+};
+
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header />
+    </div>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<AppLayout />);
