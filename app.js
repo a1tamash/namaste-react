@@ -38,7 +38,9 @@ const Header = () => {
   );
 };
 
-// const RestaurantCard = () => {};
+// wohoo i learned all the things related to git
+
+const RestaurantCard = () => {};
 
 const Body = () => {
   return (
