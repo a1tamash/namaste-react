@@ -38,7 +38,7 @@ const Header = () => {
   );
 };
 
-// const RestaurantCard = () => {};
+const RestaurantCard = () => {};
 
 const Body = () => {
   return (
